@@ -6,7 +6,6 @@ x = 2
 
 while x * x <= n:
     if s[x]:
-        # for y = x * x in range(n + 1):
         y = x * x
         while y <= n:
             s[y] = False
