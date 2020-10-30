@@ -66,9 +66,9 @@ int main()
 		for (int j = 0; j < n; j++)
 		{
 			
-			std::stringstream geek(str[j]);
-			int kj = 0;
-			geek >> kj;
+			//std::stringstream geek(str[j]);
+			//int kj = 0;
+			//geek >> kj;
 
 			str[j] = k[charNum_to_int(str[j])];
 		}
