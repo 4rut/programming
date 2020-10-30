@@ -23,4 +23,4 @@
 | Практическая 16 - [[C++]](https://github.com/4rut/programming/blob/master/Practice/16/C%2B%2B/Project1/Project1/Source.cpp) [[Python]](https://github.com/4rut/programming/blob/master/Practice/16/Python/27.10.2020.py) | ------------ |
 | Практическая 17 - [[C++]](https://github.com/4rut/programming/blob/master/Practice/17/C%2B%2B/Project1/Project1/Source.cpp) [[Python]]() | ------------ |
 | Практическая 18 - [[C++]](https://github.com/4rut/programming/blob/master/Practice/18/C%2B%2B/Project1/Project1/Source.cpp) [[Python]]() | ------------ |
-
+| Практическая 19 - [[C++]](https://github.com/4rut/programming/blob/master/Practice/19/C%2B%2B/Project1/Project1/Source.cpp) [[Python]]() | ------------ |
