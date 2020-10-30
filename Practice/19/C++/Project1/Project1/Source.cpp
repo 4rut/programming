@@ -1,8 +1,6 @@
 #include <iostream>
 #include <string>
 #include <cmath>
-#include <string>
-#include <sstream> 
 
 int F(int a) {
 	if (a > 1)
