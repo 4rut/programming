@@ -22,9 +22,9 @@ void reverse(std::string& str)
 std::string sys(int a, std::string str)
 {
 	int p = str.length();
-	int k = 1;
 	std::string res("");
-	int counter = 0;;
+	int counter = 0;
+
 	while (counter != a)
 	{
 		res += std::to_string(a % p);
