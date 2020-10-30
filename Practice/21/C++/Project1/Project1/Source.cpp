@@ -6,7 +6,6 @@ double bmi(double weight, double height) {
 }
 
 void printBMI(double BMI) {
-    double bmi(double weight, double height);
     if (BMI < 18.5) 
         std::cout << "Underweight";
     else if (BMI >= 18.5 && BMI < 25.0) 
