@@ -9,7 +9,7 @@ int F(int a) {
 		return 1;
 }
 
-void reverse(std::string& str) 
+void reverse(std::string& str)
 {
 	for (int i = 0; i < str.length() / 2; i++)
 	{
@@ -23,9 +23,8 @@ std::string sys(int a, std::string str)
 {
 	int p = str.length();
 	std::string res("");
-	int counter = 0;
 
-	while (counter != a)
+	while (a != 0)
 	{
 		res += std::to_string(a % p);
 		a /= p;
@@ -43,7 +42,7 @@ int charNum_to_int(char a)
 			return j;
 }
 
-int main() 
+int main()
 {
 	int n;
 	std::cin >> n;
@@ -55,7 +54,8 @@ int main()
 
 	for (int i = 0; i < n; i++)
 		str += '0';
-
+	
+	bool tmpChecker = 1;
 	std::string tmp;
 	for (int a = 0; a < pow(k.length(), n); a++)
 	{
@@ -64,21 +64,18 @@ int main()
 			str[str.length() - 1 - j] = tmp[tmp.length() - 1 - j];
 
 		for (int j = 0; j < n; j++)
-		{
-			
-			//std::stringstream geek(str[j]);
-			//int kj = 0;
-			//geek >> kj;
-
 			str[j] = k[charNum_to_int(str[j])];
-		}
+		
 		std::cout << str << ' ';
 
 		str = "";
 		for (int i = 0; i < n; i++)
 			str += '0';
+
+		tmpChecker = 1;
 	}
 
 	std::cout << '\n';
+
 	return 0;
 }

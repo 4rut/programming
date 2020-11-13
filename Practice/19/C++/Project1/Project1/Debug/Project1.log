@@ -1,5 +1,5 @@
 ﻿  Source.cpp
-D:\programming\Practice\19\C++\Project1\Project1\Source.cpp(16,20): warning C4018: '<': signed/unsigned mismatch
-D:\programming\Practice\19\C++\Project1\Project1\Source.cpp(65,21): warning C4018: '<': signed/unsigned mismatch
-D:\programming\Practice\19\C++\Project1\Project1\Source.cpp(46): warning C4715: 'charNum_to_int': not all control paths return a value
+D:\programming\Practice\19\C++\Project1\Project1\Source.cpp(14,20): warning C4018: '<': signed/unsigned mismatch
+D:\programming\Practice\19\C++\Project1\Project1\Source.cpp(63,21): warning C4018: '<': signed/unsigned mismatch
+D:\programming\Practice\19\C++\Project1\Project1\Source.cpp(44): warning C4715: 'charNum_to_int': not all control paths return a value
   Project1.vcxproj -> D:\programming\Practice\19\C++\Project1\Debug\Project1.exe
