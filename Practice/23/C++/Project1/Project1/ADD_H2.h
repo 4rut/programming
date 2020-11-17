@@ -1,20 +1,17 @@
 #ifndef ADD_H2
 #define ADD_H2
 
-double teylor(int x, int k = 5) 
-{
-	double minus = -1;
+double teylor(double x, int k) {
 	double sum = 0;
-	double _x = x;
+	int minus = -1;
 
-	for(int i = 0, j = 3; i < k; i++, j += 2)
+	for (int i = 0; i < k; i++) 
 	{
-		_x *= x * x;
-		sum += minus * (_x / F(j));
+		minus *= -1;
+		sum += minus * pow(x, 2 * i + 1) / F(2 * i + 1);
 	}
 
 	return sum;
 }
-
 
 #endif ADD_H2
