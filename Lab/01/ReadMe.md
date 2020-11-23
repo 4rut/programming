@@ -326,13 +326,18 @@ root.mainloop()
 
 
 6. ### Внешний вид HTML-виджета и python-приложения
- 
- 
-<center>![](./images/1.jpg)</center>
-<center>*рис. 1 html-виджет*</center>
 
-<center>![](./images/2.jpg)</center>
-<center>*рис. 2 клиентское приложение*</center>
+
+ 
+Скриншот виджета:
+
+![](./images/1.jpg)
+*рис. 1 html-виджет*
+
+Скриншот клиента:
+
+![](./images/2.jpg)
+*рис. 2 клиентское приложение*
 
 ## Вывод
 
