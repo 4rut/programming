@@ -272,7 +272,7 @@ int main() {
 
 <details>
 <summary>Client</summary>
-```
+```python
 
 from tkinter import *
 import requests
@@ -321,8 +321,10 @@ refresh()
 root.mainloop()
 
 ```
-
 </details>
+
+<br>
+
 
 
 6. ### Внешний вид HTML-виджета и python-приложения
