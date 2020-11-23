@@ -72,7 +72,6 @@ http://worldtimeapi.org/api/timezone/Europe/Simferopol
 Создаём серверное приложение. Сервер слушает get запросы на 3000 порт localhost. При определенном запросе он выдает либо html-виджет, либо обработанный json, который он получил с openweathermap и обработал. Данные хранятся в кэше, который обновляется, при устаревании.
 
 <details>
-<summary>Server</summary>
 
 ```C++
 #define _CRT_SECURE_NO_WARNINGS
@@ -328,10 +327,10 @@ root.mainloop()
 
 6. ### Внешний вид HTML-виджета и python-приложения
  
-![](./image/1.jpg)
+![](./images/1.jpg)
 *рис. 1 html-виджет*
 
-![](./image/1.jpg)
+![](./images/1.jpg)
 *рис. 2 клиентское приложение*
 
 ## Вывод
