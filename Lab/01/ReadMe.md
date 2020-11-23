@@ -272,7 +272,7 @@ int main() {
 
 <details>
 <summary>Client</summary>
-```python
+```
 
 from tkinter import *
 import requests
