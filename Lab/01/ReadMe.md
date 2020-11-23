@@ -272,8 +272,8 @@ int main() {
 
 <details>
 <summary>Client</summary>
-```python
 
+```python
 from tkinter import *
 import requests
 import json
@@ -322,7 +322,6 @@ root.mainloop()
 
 ```
 </details>
-
 <br>
 
 
