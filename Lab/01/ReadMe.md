@@ -321,7 +321,9 @@ refresh()
 root.mainloop()
 
 ```
+
 </details>
+
 
 6. ### Внешний вид HTML-виджета и python-приложения
  
