@@ -44,6 +44,52 @@ std::vector<int> bozoSort(std::vector<int> arr, bool bl=1)
 
 std::vector <std::vector<int>> bozoSort(std::vector<std::vector<int>> arr, bool bl = 1)
 {
+	const int m = arr.size();
+	const int n = arr[0].size();
+
+	bool checker = 1;
+	while (checker)
+	{
+		int rand_1_1 = rand() * n / RAND_MAX;
+		int rand_1_2 = rand() * m / RAND_MAX;
+		int rand_2_1 = rand() * n / RAND_MAX;
+		int rand_2_2 = rand() * m / RAND_MAX;
+
+		int tmp = arr[rand_1_1][rand_1_2];
+		arr[rand_1_1][rand_1_2] = arr[rand_2_1][rand_2_2];
+		arr[rand_2_1][rand_2_2] = tmp;
+
+		if (bl)
+		{
+			bool tmpBool = 1;
+			int previousNumber = arr[0][0];
+			for (int i = 0; i < m; i++)
+				for (int j = 0; j < n; j++)
+				{
+					if (previousNumber > arr[i][j])
+					{
+						tmpBool = 0;
+					}
+					previousNumber = arr[i][j];
+				}
+			checker = !tmpBool;
+		}
+		else
+		{
+			bool tmpBool = 1;
+			int previousNumber = arr[0][0];
+			for (int i = 0; i < m; i++)
+				for (int j = 0; j < n; j++)
+				{
+					if (previousNumber < arr[i][j])
+					{
+						tmpBool = 0;
+					}
+					previousNumber = arr[i][j];
+				}
+			checker = !tmpBool;
+		}
+	}
 
 	return arr;
 }
@@ -51,17 +97,6 @@ std::vector <std::vector<int>> bozoSort(std::vector<std::vector<int>> arr, bool 
 int main() 
 {
 	srand(time(NULL));
-
-	int n;
-	std::cin >> n;
-	
-	std::vector<int> arr(n);
-	for (int i = 0; i < n; i++)
-		std::cin >> arr[i];
-	
-	auto res = bozoSort(arr);
-	for (int i = 0; i < n; i++)
-		std::cout << res[i] << ' ';
 
 	return 0;
 }
