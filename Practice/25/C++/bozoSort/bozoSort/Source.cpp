@@ -116,12 +116,9 @@ void printVector(std::vector<int> vec)
 void printVector(std::vector<std::vector<int>> vec)
 {
 	for (int i = 0; i < vec.size(); i++)
-	{
 		for (int j = 0; j < vec[i].size(); j++)
-			std::cout << vec[i][j] << " ";
-		
-		std::cout << '\n';
-	}
+			std::cout << vec[i][j] << ' ';
+	std::cout << '\n';
 }
 
 
@@ -148,17 +145,20 @@ int main()
 	printVector(arr_1_1);
 	printVector(arr_1_2);
 
-	const int m = 1;
-	std::vector<std::vector<int>> arr_2(m, std::vector<int>(n));
+	int m = sqrt(n);
+	std::vector<std::vector<int>> arr_2(m, std::vector<int>(m));
 
-	for (int i = 0; i < n; i++) {
-		arr_2[0][i] = arr[i];
-	}
+	int k = 0;
+	for (int i = 0; i < m; i++)
+		for (int j = 0; j < m; j++) 
+			arr_2[i][j] = arr[k++];
+	
 	
 	auto arr_2_1 = bozoSort(arr_2);
 	auto arr_2_2 = bozoSort(arr_2, 0);
-
+	
 	printVector(arr_2_1);
+
 	printVector(arr_2_2);
 
 	int a = arr[0];
