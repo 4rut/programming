@@ -30,3 +30,4 @@
 | Практическая 22 - [[C++]]() [[Python]]() | ------------ |
 | Практическая 23 - [[C++]](https://github.com/4rut/programming/blob/master/Practice/23/C%2B%2B/Project1/Project1/Source.cpp) | ------------ |
 | Практическая 24 - [[C++]](https://github.com/4rut/programming/blob/master/Practice/24/C%2B%2B/Project1/Project1/Source.cpp) [[Python]](https://github.com/4rut/programming/blob/master/Practice/24/Python/20.11.2020.py)| ------------ |
+| Практическая 25 - [[C++]](https://github.com/4rut/programming/blob/master/Practice/25/C%2B%2B/bozoSort/bozoSort/Source.cpp) | ------------ |
