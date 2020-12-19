@@ -470,9 +470,9 @@ void yandex(const Request& req, Response& res)
 				{"cart", (*current_session)["cart"]}
 			};
 
-			json config = set_data(); // webhooks.cpp
+			json dataTmp = set_data();
 
-			for (std::string link : config["webhooks"])
+			for (std::string link : dataTmp["webhooks"])
 			{
 				// https не работает, заменяем на http
 				replace_all(link, "https://", "http://");
@@ -480,15 +480,17 @@ void yandex(const Request& req, Response& res)
 				// "http://" length
 				const int http_length = 7;
 
-				int index = link.find('/', http_length);
+				int i = link.find('/', http_length);
 
-				if (index == std::string::npos)
+				if (i == std::string::npos)
 				{
 					link.push_back('/');
 				}
 
-				Client cli(link.substr(0, index).c_str());
-				cli.Post(link.substr(index, std::string::npos).c_str(), output.dump(2), "application/json; charset=UTF-8");
+				//Client cli("webhook.site");
+				//cli.Post("/03bc9f3d-f956-466d-8af9-ccd922c65da2", output.dump(2), "application/json; charset=UTF-8");
+				json response = gen_response(text, tts, default_buttons, current_session, true);
+				res.set_content(response.dump(2), "text/json; charset=UTF-8");
 			}
 
 			(*current_session).erase("cart");
@@ -499,8 +501,8 @@ void yandex(const Request& req, Response& res)
 		}
 		else if (command == "сумма")
 		{
-			std::string text = "";
-			std::string tts = "";
+			std::string text;
+			std::string tts;
 
 			auto size = reqJson["request"]["nlu"]["tokens"].size();
 			int sum = 0;
