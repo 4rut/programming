@@ -293,8 +293,7 @@ def refresh(event=None):
 
 root = Tk()
 root.title("Погода")
-root.pack_propagate(0)
-root.bind("<Button-1>", refresh)
+
 root.geometry("200x250")
 
 
