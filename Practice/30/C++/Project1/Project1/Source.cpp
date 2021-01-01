@@ -295,5 +295,6 @@ int main()
 		
 		if (cin == "n" || cin == "N" || cin == "no" || cin == "No")
 			exit(1);
+		
 	} while (true);
 }
