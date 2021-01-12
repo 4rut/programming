@@ -7,7 +7,7 @@
 | Практические | Лабораторные |
 | ------------ | ------------ |
 | Практическая 1 - [[C++]](https://github.com/4rut/programming/blob/master/Practice/01/C%2B%2B/18.09.2020/Source.cpp) [[Python]](https://github.com/4rut/programming/blob/master/Practice/01/Python/18.09.2020.py) | [Lab 1](https://github.com/4rut/programming/blob/master/Lab/01/ReadMe.md) |
-| Практическая 2 - [[C++]](https://github.com/4rut/programming/blob/master/Practice/02/C%2B%2B/18.09.2020/Source.cpp) [[Python]](https://github.com/4rut/programming/blob/master/Practice/02/Python/18.09.2020.py) | ------------ |
+| Практическая 2 - [[C++]](https://github.com/4rut/programming/blob/master/Practice/02/C%2B%2B/18.09.2020/Source.cpp) [[Python]](https://github.com/4rut/programming/blob/master/Practice/02/Python/18.09.2020.py) | [Lab 1](https://github.com/4rut/programming/blob/master/Lab/02/ReadMe.md) |
 | Практическая 3 - [[C++]](https://github.com/4rut/programming/blob/master/Practice/03/C%2B%2B/18.09.2020/Source.cpp) [[Python]](https://github.com/4rut/programming/blob/master/Practice/03/Python/18.09.2020.py) | ------------ |
 | Практическая 4 - [[C++]](https://github.com/4rut/programming/blob/master/Practice/04/C%2B%2B/18.09.2020/Source.cpp) [[Python]](https://github.com/4rut/programming/blob/master/Practice/04/Python/18.09.2020.py) | ------------ |
 | Практическая 5 - [[C++]](https://github.com/4rut/programming/blob/master/Practice/05/C%2B%2B/Project1/Source.cpp) [[Python]](https://github.com/4rut/programming/blob/master/Practice/05/Python/18.09.2020.py) | ------------ |
