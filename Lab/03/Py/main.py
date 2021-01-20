@@ -35,15 +35,8 @@ class Grid:
 
                 self.__grid_arr[i][j] = self.__bg_arr[0]
 
-        for row in range(9):
-            for col in range(9):
-                lbl = Label(root,
-                            image=self.__grid_arr[row][col],
-                            borderwidth=0)
-                lbl.grid(row=row,
-                         column=col,
-                         padx=1,
-                         pady=1)
+    def get_grid_arr(self, i, j):
+        return self.__grid_arr[i][j]
 
     def get_score(self):
         return self.__score
@@ -58,48 +51,61 @@ class Grid:
 grid = Grid()
 
 
-def set_menu() -> None:
+def start_game() -> None:
+    # grid
+    for row in range(9):
+        for col in range(9):
+            lbl = Label(root,
+                        image=grid.get_grid_arr(row, col),
+                        borderwidth=0)
+            lbl.grid(row=row,
+                     column=col,
+                     padx=1,
+                     pady=1)
+
+    # menu
     title = Label(root,
                   text='Линии 2',
                   font=("Arial Bold", 20),
                   borderwidth=0)
 
-    title.place(width=150,
-                height=50,
-                x=720,
-                y=50)
+    title.grid(rowspan=2,
+               row=0,
+               column=10,
+               ipadx=(960-720)/2,
+               pady=1)
 
     score_menu = Label(root,
                        text='Счёт: ' + str(grid.get_score()),
                        font=("Arial", 18),
                        borderwidth=0)
 
-    score_menu.place(width=150,
-                     height=50,
-                     x=720,
-                     y=120)
+    score_menu.grid(rowspan=1,
+                    row=2,
+                    column=10,
+                    ipadx=(960-720)/2)
 
     prompt = Label(root,
                    text='Подсказка: ',
                    font=("Arial", 18),
                    borderwidth=0)
 
-    prompt.place(width=150,
-                 height=50,
-                 x=720,
-                 y=200)
+    prompt.grid(rowspan=1,
+                row=3,
+                column=10,
+                ipadx=(960-720)/2)
 
 #    for i in range(3):
 #        lbl = Label(root,
 #                    image=grid.get_buff(i),
 #                    borderwidth=0)
-#        lbl.grid(row=1,
-#                 column=i,
+#        lbl.grid(row=4,
+#                 column=10 + i,
 #                 padx=1,
 #                 pady=1)
 
 
-set_menu()
+start_game()
 
 root.geometry("960x720")
 root.mainloop()
