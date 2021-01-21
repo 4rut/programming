@@ -95,7 +95,7 @@
 
 Ссылка на excel-файл заполненный клиентским приложением.
 
-*link*
+https://drive.google.com/file/d/1urEDNTaDQyM_AJKW8IW6MHi_kA_leM30/view?usp=sharing
 
 
 Полный исходный код серверного приложения
