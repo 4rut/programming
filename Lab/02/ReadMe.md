@@ -91,11 +91,11 @@
 
 ![](./image/webhooks.jpg)
 
-*Рисунок 3. Демонстрация работы серверного сайта с добавленными webhooks*
+*Рисунок 5. Демонстрация работы серверного сайта с добавленными webhooks*
 
 Ссылка на excel-файл заполненный клиентским приложением.
 
-https://drive.google.com/file/d/1urEDNTaDQyM_AJKW8IW6MHi_kA_leM30/view?usp=sharing
+[data.xlsx](./Python/data.xlsx)
 
 
 Полный исходный код серверного приложения
