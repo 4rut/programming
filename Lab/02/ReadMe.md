@@ -826,7 +826,7 @@ int main()
 <details>
 <summary>Исходный код</summary>
 
-```
+```python
 from flask import Flask, request
 import json
 import datetime
@@ -898,9 +898,6 @@ app.run()
 ```
 </details>
 
-На момент составления отчета клиентское приложение перестало производить запись в файл. Будет добавлено позже. в подтверждение слов представлен скриншот: 
-
-![](./image/excel.jpg)
 
 ## Вывод
 

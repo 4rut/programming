@@ -35,8 +35,14 @@ json set_data()
 	}
 	else
 	{
+
 		json data;
 		data["webhooks"] = json::array();
+
+		std::ofstream data_file_er("data.json");
+		data_file_er << data;
+		data_file_er.close();
+
 		return data;
 	}
 	return dataJsonTmp;
@@ -477,20 +483,17 @@ void yandex(const Request& req, Response& res)
 				// https не работает, заменяем на http
 				replace_all(link, "https://", "http://");
 
-				// "http://" length
-				const int http_length = 7;
+				const std::string http_prot = "http://";
 
-				int i = link.find('/', http_length);
+				int i = link.find('/', http_prot.length());
 
 				if (i == std::string::npos)
 				{
 					link.push_back('/');
 				}
 
-				//Client cli("webhook.site");
-				//cli.Post("/03bc9f3d-f956-466d-8af9-ccd922c65da2", output.dump(2), "application/json; charset=UTF-8");
 				json response = gen_response(text, tts, default_buttons, current_session, true);
-				res.set_content(response.dump(2), "text/json; charset=UTF-8");
+				res.set_content(response.dump(2), "application/json; charset=UTF-8");
 			}
 
 			(*current_session).erase("cart");
