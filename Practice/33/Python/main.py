@@ -1,6 +1,3 @@
-import config
-
-
 def create(length, base, step):
     if length < 0:
         return None
