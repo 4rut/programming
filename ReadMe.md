@@ -37,3 +37,4 @@
 | Практическая 29 - [[C++]](https://github.com/4rut/programming/blob/master/Practice/29/C%2B%2B/Project1/Project1/Source.cpp) [[Python]]() | ------------ |
 | Практическая 30 - [[C++]](https://github.com/4rut/programming/blob/master/Practice/30/C%2B%2B/Project1/Project1/Source.cpp) [[Python]]() | ------------ |
 | Практическая 31 - [[C++]](https://github.com/4rut/programming/blob/master/Practice/31/C%2B%2B/Project1/Project1/Source.cpp) [[Python]]() | ------------ |
+| Практическая 33 - [[C++]](https://github.com/4rut/programming/blob/master/Practice/33/C%2B%2B/33/main.cpp) [[Python]](https://github.com/4rut/programming/blob/master/Practice/33/Python/main.py) | ------------ |
