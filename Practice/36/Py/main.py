@@ -16,7 +16,8 @@ class Point:
         if type(a1) == str:
             tmp_str = a1
             tmp_pos = a1.find(",")
-            # FIXME
+            a1 = tmp_str[1:tmp_pos - 1]
+            a2 = tmp_str[tmp_pos + 1:len(tmp_str) - 2]
 
         if coord_system == 1:
             self.x = a1
@@ -65,6 +66,8 @@ class Point:
     def __str__(self):
         return f'({self.x, self.y})'
 
+
+p = Point('(-1.0,4.0)')
 
 with open('data.txt') as fin:
     original = [Point(p) for p in fin.readline().split(', ')]
