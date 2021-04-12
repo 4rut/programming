@@ -146,9 +146,4 @@ Rational::operator bool()
 bool Rational::isNaN()
 {
     return rational.first == 0 && rational.second == 0;
-}#include "rational.h"
-
-Rational::Rational()
-{
-
 }
