@@ -41,3 +41,7 @@
 | Практическая 34 - [[C++]](https://github.com/4rut/programming/blob/master/Practice/34/34/main.cpp) [[Python]]() | ------------ |
 | Практическая 35 - [[C++]](https://github.com/4rut/programming/tree/master/Practice/35/35) [[Python]]() | ------------ |
 | Практическая 36 - [[C++]](https://github.com/4rut/programming/blob/master/Practice/36/C++/untitled/main.cpp) [[Python]](https://github.com/4rut/programming/blob/master/Practice/36/Py/main.py) | ------------ |
+.
+| Практическая 37 - [[C++]](https://github.com/4rut/programming/blob/master/Practice/37/C%2B%2B/untitled/main.cpp) [[Python]](https://github.com/4rut/programming/blob/master/Practice/37/pythonProject/main.py) | ------------ |
+| Практическая 38 - [[C++]](https://github.com/4rut/programming/blob/master/Practice/38/C%2B%2B/38/main.cpp) [[Python]](https://github.com/4rut/programming/blob/master/Practice/38/Python/main.py) | ------------ |
+
